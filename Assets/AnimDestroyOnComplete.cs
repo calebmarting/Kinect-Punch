@@ -39,7 +39,9 @@ public class AnimDestroyOnComplete : MonoBehaviour {
 					if(handRight.isPunching()){
 						clone.transform.position = handRight.transform.position+Vector3.forward;
 					}
+					Debug.Log("Timer " + fuseGracePeriod);
 					Destroy(gameObject);
+
 				}
 			}
 			
