@@ -78,11 +78,11 @@ public class CalebBodySourceView : MonoBehaviour {
             if (body.IsTracked) {
 
                 if (!primaryFound) {
-                    bodyParts[0] = GetVector3FromJoint (body.Joints[Kinect.JointType.Head]);
-                    bodyParts[1] = GetVector3FromJoint (body.Joints[Kinect.JointType.HandLeft]);
-                    bodyParts[2] = GetVector3FromJoint (body.Joints[Kinect.JointType.HandRight]);
-                    bodyParts[3] = GetVector3FromJoint (body.Joints[Kinect.JointType.FootLeft]);
-                    bodyParts[4] = GetVector3FromJoint (body.Joints[Kinect.JointType.FootRight]);
+                    bodyParts[0] = Vector3.Scale (GetVector3FromJoint (body.Joints[Kinect.JointType.Head]), multipliers) + offset;
+                    bodyParts[1] = Vector3.Scale (GetVector3FromJoint (body.Joints[Kinect.JointType.HandLeft]), multipliers) + offset;
+                    bodyParts[2] = Vector3.Scale (GetVector3FromJoint (body.Joints[Kinect.JointType.HandRight]), multipliers) + offset;
+                    bodyParts[3] = Vector3.Scale (GetVector3FromJoint (body.Joints[Kinect.JointType.FootLeft]), multipliers) + offset;
+                    bodyParts[4] = Vector3.Scale (GetVector3FromJoint (body.Joints[Kinect.JointType.FootRight]), multipliers) + offset;
                     primaryFound = true;
 
                 }
