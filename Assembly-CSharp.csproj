@@ -57,6 +57,7 @@
      <Compile Include="Assets\_Scripts\Headtrack.cs" />
      <Compile Include="Assets\_Scripts\HeadtrackOld.cs" />
      <Compile Include="Assets\_Scripts\ProjectionMatrix.cs" />
+     <Compile Include="Assets\CannonController.cs" />
      <Compile Include="Assets\GreenScreen\Scripts\CoordinateMapperManager.cs" />
      <Compile Include="Assets\GreenScreen\Scripts\CoordinateMapperView.cs" />
      <Compile Include="Assets\KinectView\Scripts\BodySourceManager.cs" />
@@ -69,6 +70,11 @@
      <Compile Include="Assets\KinectView\Scripts\InfraredSourceManager.cs" />
      <Compile Include="Assets\KinectView\Scripts\InfraredSourceView.cs" />
      <Compile Include="Assets\KinectView\Scripts\MultiSourceManager.cs" />
+     <Compile Include="Assets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
+     <Compile Include="Assets\PSDestroyOnComplete.cs" />
+     <Compile Include="Assets\PunchScript.cs" />
+     <None Include="Assets\LowPolyWater_Pack\LowPoly Island\Credits.txt" />
+     <None Include="Assets\LowPolyWater_Pack\Shaders\WaterShaded.shader" />
      <None Include="Assets\GreenScreen\Materials\GreenScreenShader.shader" />
      <None Include="Assets\BOXOPHOBIC\Skybox Cubemap Extended\Shaders\Skybox Cubemap Extended.shader" />
  <Reference Include="UnityEditor.StandardEvents">

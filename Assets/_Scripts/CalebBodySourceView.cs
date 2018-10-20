@@ -8,6 +8,8 @@ public class CalebBodySourceView : MonoBehaviour {
     public Vector3 offset;
     public Vector3 multipliers;
 
+    public bool render;
+
     public Vector3[] bodyParts = new Vector3[5];
 
     public Material BoneMaterial;
@@ -124,6 +126,7 @@ public class CalebBodySourceView : MonoBehaviour {
     }
 
     private void RefreshBodyObject (Kinect.Body body, GameObject bodyObject) {
+        if(render)
         for (Kinect.JointType jt = Kinect.JointType.SpineBase; jt <= Kinect.JointType.ThumbRight; jt++) {
             Kinect.Joint sourceJoint = body.Joints[jt];
             Kinect.Joint? targetJoint = null;
