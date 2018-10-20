@@ -1,0 +1,13 @@
+This project uses the following items from Poly (http://poly.google.com):
+
+Title: island
+Author: JHONALFRED TERRADO
+URL: https://poly.google.com/view/fCiagnawI28
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Island
+Author: Poly by Google
+URL: https://poly.google.com/view/fG9iP5afr7U
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode

@@ -26,7 +26,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -35,7 +35,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
     <NoConfig>true</NoConfig>
@@ -54,6 +54,22 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\LowPolyWater_Pack\Scripts\Editor\GeneratePlane.cs" />
+     <Compile Include="Assets\PolyToolkit\Editor\AnalyticsSender.cs" />
+     <Compile Include="Assets\PolyToolkit\Editor\AssetBrowser\AssetBrowserManager.cs" />
+     <Compile Include="Assets\PolyToolkit\Editor\AssetBrowser\AssetBrowserWindow.cs" />
+     <Compile Include="Assets\PolyToolkit\Editor\AssetBrowser\GUIHelper.cs" />
+     <Compile Include="Assets\PolyToolkit\Editor\AssetBrowser\ThumbnailCache.cs" />
+     <Compile Include="Assets\PolyToolkit\Editor\AssetBrowser\WelcomeWindow.cs" />
+     <Compile Include="Assets\PolyToolkit\Editor\CheckBuild.cs" />
+     <Compile Include="Assets\PolyToolkit\Editor\Importer\AttributionFileGenerator.cs" />
+     <Compile Include="Assets\PolyToolkit\Editor\Importer\PolyImporter.cs" />
+     <Compile Include="Assets\PolyToolkit\Editor\PostInstallHandler.cs" />
+     <Compile Include="Assets\PolyToolkit\Editor\PtAnalytics.cs" />
+     <Compile Include="Assets\PolyToolkit\Editor\PtSettingsEditor.cs" />
+     <Compile Include="Assets\PolyToolkit\Editor\PtUtils.cs" />
+     <Compile Include="Assets\PolyToolkit\Editor\WarnAboutUsingPolyInternal.cs" />
+     <Compile Include="Assets\PolyToolkit\Editor\WarnIfManagerNotInScene.cs" />
+     <None Include="Assets\PolyToolkit\Editor\DummyVERSION.txt" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/Caleb Desktop/Desktop/Kinect Punch/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
@@ -326,6 +342,9 @@
  </Reference>
  <Reference Include="UnityEngine.StandardEvents">
  <HintPath>C:/Users/Caleb Desktop/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>C:/Users/Caleb Desktop/Desktop/Kinect Punch/Assets/PolyToolkit/ThirdParty/Json-NET-for-Unity/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>D:/ProgramFiles/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/mscorlib.dll</HintPath>
