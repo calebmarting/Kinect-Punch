@@ -164,6 +164,7 @@
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Basic\Rainbow\Rainbow.shader" />
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Basic\DoubleTaperedMarker\DoubleTaperedMarker.shader" />
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Basic\Plasma\Plasma.shader" />
+     <None Include="Assets\Poly\Sources\Boxing_Glove_Placeholder_Andrea_Loriedo_aiP01_CrRYb\FileNameMapping.txt" />
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Basic\Dots\Dots.shader" />
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Blocks\BlocksGem\BlocksGem.shader" />
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Basic\Electricity\Electricity.shader" />

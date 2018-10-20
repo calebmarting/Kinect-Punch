@@ -1,5 +1,11 @@
 This project uses the following items from Poly (http://poly.google.com):
 
+Title: Boxing Glove Placeholder
+Author: Andrea Loriedo
+URL: https://poly.google.com/view/aiP01-CrRYb
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
 Title: island
 Author: JHONALFRED TERRADO
 URL: https://poly.google.com/view/fCiagnawI28
