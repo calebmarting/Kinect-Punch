@@ -60,6 +60,7 @@
      <Compile Include="Assets\AnimDestroyOnComplete.cs" />
      <Compile Include="Assets\ButtonColliderControl.cs" />
      <Compile Include="Assets\CannonController.cs" />
+     <Compile Include="Assets\CharacterControllerTerrain.cs" />
      <Compile Include="Assets\KinectView\Scripts\BodySourceManager.cs" />
      <Compile Include="Assets\KinectView\Scripts\BodySourceView.cs" />
      <Compile Include="Assets\KinectView\Scripts\ColorSourceManager.cs" />

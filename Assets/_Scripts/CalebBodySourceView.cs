@@ -47,11 +47,11 @@ public class CalebBodySourceView : MonoBehaviour {
 
         List<ulong> trackedIds = new List<ulong> ();
         foreach (var body in data) {
-            bodyParts[0] = new Vector3(10000,10000,10000);
-            bodyParts[1] = new Vector3(10000,10000,10000);
-            bodyParts[2] = new Vector3(10000,10000,10000);
-            bodyParts[3] = new Vector3(10000,10000,10000);
-            bodyParts[4] = new Vector3(10000,10000,10000);
+            bodyParts[0] = new Vector3(0,0,0);
+            bodyParts[1] = new Vector3(0,0,0);
+            bodyParts[2] = new Vector3(0,0,0);
+            bodyParts[3] = new Vector3(0,0,0);
+            bodyParts[4] = new Vector3(0,0,0);
             if (body == null) {
                 continue;
             }
@@ -81,11 +81,11 @@ public class CalebBodySourceView : MonoBehaviour {
             if (body.IsTracked) {
 
                 if (!primaryFound) {
-                    bodyParts[0] = Vector3.Scale (GetVector3FromJoint (body.Joints[Kinect.JointType.Head]), multipliers) + offset;
-                    bodyParts[1] = Vector3.Scale (GetVector3FromJoint (body.Joints[Kinect.JointType.HandLeft]), multipliers) + offset;
-                    bodyParts[2] = Vector3.Scale (GetVector3FromJoint (body.Joints[Kinect.JointType.HandRight]), multipliers) + offset;
-                    bodyParts[3] = Vector3.Scale (GetVector3FromJoint (body.Joints[Kinect.JointType.FootLeft]), multipliers) + offset;
-                    bodyParts[4] = Vector3.Scale (GetVector3FromJoint (body.Joints[Kinect.JointType.FootRight]), multipliers) + offset;
+                    bodyParts[0] = Vector3.Scale (GetVector3FromJoint (body.Joints[Kinect.JointType.Head]), multipliers) + offset ;
+                    bodyParts[1] = transform.position + Vector3.Scale (GetVector3FromJoint (body.Joints[Kinect.JointType.HandLeft]), multipliers) + offset ;
+                    bodyParts[2] = transform.position + Vector3.Scale (GetVector3FromJoint (body.Joints[Kinect.JointType.HandRight]), multipliers) + offset ;
+                    bodyParts[3] = transform.position + Vector3.Scale (GetVector3FromJoint (body.Joints[Kinect.JointType.FootLeft]), multipliers) + offset;
+                    bodyParts[4] = transform.position + Vector3.Scale (GetVector3FromJoint (body.Joints[Kinect.JointType.FootRight]), multipliers) + offset;
                     primaryFound = true;
                     Vector3 right = bodyParts[2]-(Vector3.Scale (GetVector3FromJoint (body.Joints[Kinect.JointType.ElbowRight]), multipliers) + offset);
                     handRots[1] =  Quaternion.LookRotation(right,Vector3.up);
@@ -102,11 +102,11 @@ public class CalebBodySourceView : MonoBehaviour {
             }
         }
         if (!primaryFound) {
-            bodyParts[0] = new Vector3(10000,10000,10000);
-            bodyParts[1] = new Vector3(10000,10000,10000);
-            bodyParts[2] = new Vector3(10000,10000,10000);
-            bodyParts[3] = new Vector3(10000,10000,10000);
-            bodyParts[4] = new Vector3(10000,10000,10000);
+            bodyParts[0] = new Vector3(0,0,0);
+            bodyParts[1] = new Vector3(0,0,0);
+            bodyParts[2] = new Vector3(0,0,0);
+            bodyParts[3] = new Vector3(0,0,0);
+            bodyParts[4] = new Vector3(0,0,0);
 
         }
     }
@@ -141,7 +141,8 @@ public class CalebBodySourceView : MonoBehaviour {
             }
 
             Transform jointObj = bodyObject.transform.Find (jt.ToString ());
-            jointObj.localPosition = Vector3.Scale (GetVector3FromJoint (sourceJoint), multipliers) + offset;
+            //Caleb Fix
+            jointObj.localPosition = Vector3.Scale (GetVector3FromJoint (sourceJoint), multipliers) + offset+transform.position;
 
             LineRenderer lr = jointObj.GetComponent<LineRenderer> ();
             if (targetJoint.HasValue) {
