@@ -56,6 +56,7 @@ public class ObjectSpawner : MonoBehaviour {
 	public void StartGame () {
 		audioData = GetComponent<AudioSource>();
         audioData.Play(0);
+		currentIndex = 0;
 		offset = Time.timeSinceLevelLoad;
 		isGamePlaying = true;
 	}
