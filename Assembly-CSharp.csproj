@@ -61,6 +61,10 @@
      <Compile Include="Assets\ButtonColliderControl.cs" />
      <Compile Include="Assets\CannonController.cs" />
      <Compile Include="Assets\CharacterControllerTerrain.cs" />
+     <Compile Include="Assets\Fx Explosion Pack\Script\csDemoScenceControl.cs" />
+     <Compile Include="Assets\Fx Explosion Pack\Script\csLightControl.cs" />
+     <Compile Include="Assets\Fx Explosion Pack\Script\csMouseOrbit.cs" />
+     <Compile Include="Assets\Fx Explosion Pack\Script\DestroyEffect.cs" />
      <Compile Include="Assets\KinectView\Scripts\BodySourceManager.cs" />
      <Compile Include="Assets\KinectView\Scripts\BodySourceView.cs" />
      <Compile Include="Assets\KinectView\Scripts\ColorSourceManager.cs" />
@@ -127,6 +131,7 @@
      <Compile Include="Assets\PostController.cs" />
      <Compile Include="Assets\PSDestroyOnComplete.cs" />
      <Compile Include="Assets\PunchScript.cs" />
+     <Compile Include="Assets\Song.cs" />
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Basic\Bubbles\Bubbles.shader" />
      <None Include="Assets\LowPolyWater_Pack\LowPoly Island\Credits.txt" />
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Basic\SoftHighlighter\SoftHighlighter.shader" />

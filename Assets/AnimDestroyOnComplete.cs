@@ -10,6 +10,7 @@ public class AnimDestroyOnComplete : MonoBehaviour {
 	public float fuse;
 	public float fuseGracePeriod;
 
+	public GameObject ExplosionPrefab;
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator>();
@@ -31,7 +32,13 @@ public class AnimDestroyOnComplete : MonoBehaviour {
 
 			if(handLeft.isPunching()||handRight.isPunching()){
 				if(fuseGracePeriod>0&&fuse==0){
-					Debug.Log("PUNCH KICK");
+					GameObject clone = Instantiate(ExplosionPrefab);
+					if(handLeft.isPunching()){
+						clone.transform.position = handLeft.transform.position+Vector3.forward;
+					}
+					if(handRight.isPunching()){
+						clone.transform.position = handRight.transform.position+Vector3.forward;
+					}
 					Destroy(gameObject);
 				}
 			}

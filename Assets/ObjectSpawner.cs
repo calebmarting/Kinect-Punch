@@ -9,6 +9,8 @@ public class ObjectSpawner : MonoBehaviour {
 	public GameObject fish;
 	public GameObject cannonTip;
 
+	public Song song;
+
 	private Vector3 spawnPoint;
 	public Vector3 shootDirection = new Vector3(0, 0, 1);
 	public float shootVelocity = 10f;
@@ -16,13 +18,15 @@ public class ObjectSpawner : MonoBehaviour {
 	private float offset;
 	private bool isGamePlaying;
 	private int currentIndex;
-	private object[,] timings = new object[,] {{7.709289f,'b'},{8.681288f,'b'},{9.645397f,'b'},{10.56776f,'b'},{11.50429f,'b'},{11.93742f,'b'},{12.03765f,'b'},{12.15429f,'b'},{12.27157f,'b'},{12.38761f,'b'}};
+	private object[,] timings;//new object[,] {{7.709289f,'b'},{8.681288f,'b'},{9.645397f,'b'},{10.56776f,'b'},{11.50429f,'b'},{11.93742f,'b'},{12.03765f,'b'},{12.15429f,'b'},{12.27157f,'b'},{12.38761f,'b'}};
 
 	// Use this for initialization
 	void Start () {
+		timings = song.timings;
+
 		isGamePlaying = false;
 		currentIndex = 0;
-		offset = 0f;
+		offset = Time.timeSinceLevelLoad;
 		spawnPoint = cannonTip.GetComponent<Transform>().position;
 		//StartGame();
 	}
@@ -31,7 +35,8 @@ public class ObjectSpawner : MonoBehaviour {
 	void Update () {
 		if (isGamePlaying) {
 			if (currentIndex < timings.GetLength(0)) {
-				if ((float)timings[currentIndex, 0] <= Time.timeSinceLevelLoad - offset) {
+				if ((float)timings[currentIndex, 0] <= Time.timeSinceLevelLoad - offset-song.offset) {
+					
 					Spawn((char)timings[currentIndex, 1]);
 					currentIndex++;
 				}
@@ -44,7 +49,7 @@ public class ObjectSpawner : MonoBehaviour {
 	private void Spawn (char type) {
 		GameObject projectile;
 		if (type == 'b') {
-			projectile = Instantiate(bomb, spawnPoint, Quaternion.identity);
+			projectile = Instantiate(bomb, spawnPoint, Random.rotation);
 		} else if (type == 'f') {
 			projectile = Instantiate(fish, spawnPoint, Quaternion.identity);
 		} else {
