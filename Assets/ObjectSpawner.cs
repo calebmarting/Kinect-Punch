@@ -24,7 +24,7 @@ public class ObjectSpawner : MonoBehaviour {
 		currentIndex = 0;
 		offset = 0f;
 		spawnPoint = cannonTip.GetComponent<Transform>().position;
-		StartGame();
+		//StartGame();
 	}
 	
 	// Update is called once per frame
@@ -58,6 +58,12 @@ public class ObjectSpawner : MonoBehaviour {
         audioData.Play(0);
 		offset = Time.timeSinceLevelLoad;
 		isGamePlaying = true;
+	}
+
+	public void StopGame () {
+		audioData = GetComponent<AudioSource>();
+        audioData.Stop();
+		isGamePlaying = false;
 	}
 
 	private void EndGame () {

@@ -58,6 +58,7 @@
      <Compile Include="Assets\_Scripts\HeadtrackOld.cs" />
      <Compile Include="Assets\_Scripts\ProjectionMatrix.cs" />
      <Compile Include="Assets\AnimDestroyOnComplete.cs" />
+     <Compile Include="Assets\ButtonColliderControl.cs" />
      <Compile Include="Assets\CannonController.cs" />
      <Compile Include="Assets\KinectView\Scripts\BodySourceManager.cs" />
      <Compile Include="Assets\KinectView\Scripts\BodySourceView.cs" />
@@ -121,6 +122,7 @@
      <Compile Include="Assets\PolyToolkit\Scripts\PolyTypes.cs" />
      <Compile Include="Assets\PolyToolkit\Scripts\PtAsset.cs" />
      <Compile Include="Assets\PolyToolkit\Scripts\PtAssetObject.cs" />
+     <Compile Include="Assets\PostController.cs" />
      <Compile Include="Assets\PSDestroyOnComplete.cs" />
      <Compile Include="Assets\PunchScript.cs" />
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Basic\Bubbles\Bubbles.shader" />
