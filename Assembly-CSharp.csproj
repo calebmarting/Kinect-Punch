@@ -71,6 +71,7 @@
      <Compile Include="Assets\KinectView\Scripts\InfraredSourceView.cs" />
      <Compile Include="Assets\KinectView\Scripts\MultiSourceManager.cs" />
      <Compile Include="Assets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
+     <Compile Include="Assets\objectController.cs" />
      <Compile Include="Assets\ObjectSpawner.cs" />
      <Compile Include="Assets\PolyToolkit\ExampleScripts\HelloPoly.cs" />
      <Compile Include="Assets\PolyToolkit\ExampleScripts\Rotate.cs" />
@@ -142,6 +143,7 @@
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Basic\Highlighter\AdditiveCutout.shader" />
      <None Include="Assets\LowPolyWater_Pack\Shaders\WaterShaded.shader" />
      <None Include="Assets\PolyToolkit\Internal\tbt\Shaders\Include\Brush.cginc" />
+     <None Include="Assets\Poly\Sources\Wood_Bridge_Poly_by_Google_1uQSi6qTp6o\FileNameMapping.txt" />
      <None Include="Assets\PolyToolkit\ThirdParty\GPU-Voronoi-Noise\Assets\GPUVoronoiNoise\Shader\BlocksGemGPUVoronoiNoise.cginc" />
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Basic\Petal\Petal.shader" />
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Basic\Waveform\Waveform.shader" />
