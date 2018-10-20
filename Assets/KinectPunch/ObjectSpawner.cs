@@ -51,9 +51,9 @@ public class ObjectSpawner : MonoBehaviour {
 		if (type == 'b') {
 			projectile = Instantiate(bomb, spawnPoint, Random.rotation);
 		} else if (type == 'f') {
-			projectile = Instantiate(fish, spawnPoint, Quaternion.identity);
+			projectile = Instantiate(fish, spawnPoint, Random.rotation);
 		} else {
-			projectile = Instantiate(pot, spawnPoint, Quaternion.identity);
+			projectile = Instantiate(pot, spawnPoint, Random.rotation);
 		}
 		// projectile.GetComponent<Rigidbody>().velocity = transform.TransformDirection(shootDirection * shootVelocity);
 	}

@@ -59,6 +59,7 @@
      <Compile Include="Assets\_Scripts\ProjectionMatrix.cs" />
      <Compile Include="Assets\AnimationDeath.cs" />
      <Compile Include="Assets\KinectPunch\AnimDestroyOnComplete.cs" />
+     <Compile Include="Assets\KinectPunch\BarrelController.cs" />
      <Compile Include="Assets\KinectPunch\ButtonColliderControl.cs" />
      <Compile Include="Assets\KinectPunch\CannonController.cs" />
      <Compile Include="Assets\KinectPunch\CharacterControllerTerrain.cs" />
