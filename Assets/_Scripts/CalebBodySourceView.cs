@@ -11,6 +11,7 @@ public class CalebBodySourceView : MonoBehaviour {
     public bool render;
 
     public Vector3[] bodyParts = new Vector3[5];
+    public Quaternion[] handRots = new Quaternion[2];
 
     public Material BoneMaterial;
     public GameObject BodySourceManager;
@@ -86,6 +87,10 @@ public class CalebBodySourceView : MonoBehaviour {
                     bodyParts[3] = Vector3.Scale (GetVector3FromJoint (body.Joints[Kinect.JointType.FootLeft]), multipliers) + offset;
                     bodyParts[4] = Vector3.Scale (GetVector3FromJoint (body.Joints[Kinect.JointType.FootRight]), multipliers) + offset;
                     primaryFound = true;
+                    Vector3 right = bodyParts[2]-(Vector3.Scale (GetVector3FromJoint (body.Joints[Kinect.JointType.ElbowRight]), multipliers) + offset);
+                    handRots[1] =  Quaternion.LookRotation(right,Vector3.up);
+                    Vector3 left = bodyParts[1]-(Vector3.Scale (GetVector3FromJoint (body.Joints[Kinect.JointType.ElbowLeft]), multipliers) + offset);
+                    handRots[0] =  Quaternion.LookRotation(left,Vector3.up);
 
                 }
 

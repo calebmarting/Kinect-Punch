@@ -50,7 +50,7 @@ public class ObjectSpawner : MonoBehaviour {
 		} else {
 			projectile = Instantiate(pot, spawnPoint, Quaternion.identity);
 		}
-		projectile.GetComponent<Rigidbody>().velocity = transform.TransformDirection(shootDirection * shootVelocity);
+		// projectile.GetComponent<Rigidbody>().velocity = transform.TransformDirection(shootDirection * shootVelocity);
 	}
 
 	public void StartGame () {

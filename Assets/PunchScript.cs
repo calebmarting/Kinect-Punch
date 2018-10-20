@@ -9,12 +9,13 @@ public class PunchScript : MonoBehaviour {
 	public float threshold;
 	private Vector3[] waitArr;
 
+private bool isPunch = false;
 	private Material mat;
 
 	// Use this for initialization
 	void Start () {
 		waitArr = new Vector3[waitArrSize];
-		mat = GetComponent<Renderer>().material;
+		mat = transform.GetComponent<Renderer>().material;
 	}
 	
 	// Update is called once per frame
@@ -26,24 +27,21 @@ public class PunchScript : MonoBehaviour {
 				if(waitArr[0].y-waitArr[waitArr.Length-1].y>threshold){
 			//Debug.Log("Swipe " + Mathf.Abs( waitArr[0].z-waitArr[waitArr.Length-1].z));
 			mat.color = Color.blue;
+			isPunch = true;
 		}else if(waitArr[0].z-waitArr[waitArr.Length-1].z>threshold){
 			//Debug.Log("Swipe " + Mathf.Abs( waitArr[0].z-waitArr[waitArr.Length-1].z));
 			mat.color = Color.red;
-		}else
+			isPunch = true;
+		}else{
 			mat.color = Color.white;
-
+			isPunch = false;
+		}
 
 	}
 
-    // void OnTriggerEnter(Collider other)
-    // {
-	// 	if(other.GetComponent<Rigidbody>()!=null){
-    //     	Rigidbody rb = other.GetComponent<Rigidbody>();
-	// 		Vector3 dir = Vector3.Normalize(other.transform.position-transform.position);
-	// 		var force = 10f;
-	// 		rb.AddForce(dir.x*force,dir.y*force,dir.z*force,ForceMode.Impulse);
+	public bool isPunching(){
+		return isPunch;
+	}
 
 
-	// 	}
-    // }
 }
