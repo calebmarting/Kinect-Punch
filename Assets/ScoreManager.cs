@@ -44,4 +44,9 @@ public class ScoreManager : MonoBehaviour {
 		clone.transform.position = transform.position;
 		text.text = totalScore.ToString();
 	}
+
+	public void reset(){
+		totalScore = 0;
+		text.text = "0";
+	}
 }

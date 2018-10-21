@@ -169,6 +169,7 @@
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Basic\DiamondHull\DiamondHull.shader" />
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Basic\CelVinyl\CelVinyl.shader" />
      <None Include="Assets\Poly\Sources\Tuft_of_grass_Poly_by_Google_3tyh15Fbmsx\FileNameMapping.txt" />
+     <None Include="Assets\Poly\Sources\Soda_Can_Poly_by_Google_cNjAaDY27fQ\FileNameMapping.txt" />
      <None Include="Assets\Poly\Sources\Flower_Poly_by_Google_9znAp0dJiS8\FileNameMapping.txt" />
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Basic\LightWire\LightWire.shader" />
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Shared\Shaders\DiffuseSingleSided.shader" />
@@ -193,6 +194,7 @@
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Shared\Shaders\DiffuseDoubleSided.shader" />
      <None Include="Assets\Poly\Sources\island_JHONALFRED_TERRADO_fCiagnawI28\FileNameMapping.txt" />
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Shared\Shaders\StandardSingleSided.shader" />
+     <None Include="Assets\Poly\Sources\Soda_Poly_by_Google_2w4Av7jJ2_B\FileNameMapping.txt" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/Caleb Desktop/Desktop/Kinect Punch/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>

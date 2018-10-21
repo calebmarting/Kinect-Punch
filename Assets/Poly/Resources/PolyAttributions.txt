@@ -48,6 +48,18 @@ URL: https://poly.google.com/view/fG9iP5afr7U
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
+Title: Soda
+Author: Poly by Google
+URL: https://poly.google.com/view/2w4Av7jJ2_B
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Soda Can
+Author: Poly by Google
+URL: https://poly.google.com/view/cNjAaDY27fQ
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
 Title: Tuft of grass
 Author: Poly by Google
 URL: https://poly.google.com/view/3tyh15Fbmsx
