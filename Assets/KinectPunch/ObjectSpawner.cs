@@ -8,6 +8,8 @@ public class ObjectSpawner : MonoBehaviour {
 	public int missileProbOneIn = 10;
 	public GameObject missile;
 
+	public GameObject SmokeCloud;
+
 	public GameObject bomb;
 	public GameObject pot;
 	public GameObject fish;
@@ -65,6 +67,9 @@ public class ObjectSpawner : MonoBehaviour {
 		} else {
 			projectile = Instantiate(pot, spawnPoint, Random.rotation);
 		}
+
+		GameObject c = Instantiate(SmokeCloud);
+		c.transform.position = spawnPoint;
 		// projectile.GetComponent<Rigidbody>().velocity = transform.TransformDirection(shootDirection * shootVelocity);
 	}
 
