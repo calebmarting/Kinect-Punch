@@ -131,7 +131,7 @@ public class CalebBodySourceView : MonoBehaviour {
     }
 
     private void RefreshBodyObject (Kinect.Body body, GameObject bodyObject) {
-        if(render)
+        if(render){
         for (Kinect.JointType jt = Kinect.JointType.SpineBase; jt <= Kinect.JointType.ThumbRight; jt++) {
             Kinect.Joint sourceJoint = body.Joints[jt];
             Kinect.Joint? targetJoint = null;
@@ -152,6 +152,30 @@ public class CalebBodySourceView : MonoBehaviour {
             } else {
                 lr.enabled = false;
             }
+        }
+        }
+        else{
+            for (Kinect.JointType jt = Kinect.JointType.SpineBase; jt <= Kinect.JointType.ThumbRight; jt++) {
+            Kinect.Joint sourceJoint = body.Joints[jt];
+            Kinect.Joint? targetJoint = null;
+
+            if (_BoneMap.ContainsKey (jt)) {
+                targetJoint = body.Joints[_BoneMap[jt]];
+            }
+
+            Transform jointObj = bodyObject.transform.Find (jt.ToString ());
+            //Caleb Fix
+            jointObj.localPosition = Vector3.down*1000;
+
+            LineRenderer lr = jointObj.GetComponent<LineRenderer> ();
+            if (targetJoint.HasValue) {
+                lr.SetPosition (0, Vector3.down*1000);
+                lr.SetPosition (1, Vector3.down*1000);
+                lr.SetColors (GetColorForState (sourceJoint.TrackingState), GetColorForState (targetJoint.Value.TrackingState));
+            } else {
+                lr.enabled = false;
+            }
+        }
         }
     }
 

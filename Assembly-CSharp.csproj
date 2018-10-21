@@ -140,9 +140,12 @@
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Basic\Hypercolor\HypercolorSingleSided.shader" />
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Basic\HyperGrid\HyperGrid.shader" />
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Basic\Toon\Toon.shader" />
+     <None Include="Assets\Poly\Sources\Daisy_Poly_by_Google_ckAqqaCskMy\FileNameMapping.txt" />
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Shared\Shaders\DiffuseOpaqueDoubleSided.shader" />
+     <None Include="Assets\Poly\Sources\campfire_wood_winnie_Storey_0drQQ1ENIfW\FileNameMapping.txt" />
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Shared\Shaders\DiffuseOpaqueSingleSided.shader" />
      <None Include="Assets\PolyToolkit\Internal\tbt\Shaders\Unlit-Diffuse.shader" />
+     <None Include="Assets\Poly\Sources\big_rock_Balazs_Buri_2GEkDDX5iaQ\FileNameMapping.txt" />
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Basic\Hypercolor\HypercolorDoubleSided.shader" />
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Basic\Disco\Disco.shader" />
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Basic\WaveformPulse\NeonPulse.shader" />
@@ -165,6 +168,8 @@
      <None Include="Assets\PolyToolkit\ThirdParty\Noise\Shaders\Noise.cginc" />
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Basic\DiamondHull\DiamondHull.shader" />
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Basic\CelVinyl\CelVinyl.shader" />
+     <None Include="Assets\Poly\Sources\Tuft_of_grass_Poly_by_Google_3tyh15Fbmsx\FileNameMapping.txt" />
+     <None Include="Assets\Poly\Sources\Flower_Poly_by_Google_9znAp0dJiS8\FileNameMapping.txt" />
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Basic\LightWire\LightWire.shader" />
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Shared\Shaders\DiffuseSingleSided.shader" />
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Shared\Shaders\Unlit.shader" />
@@ -176,6 +181,7 @@
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Basic\DoubleTaperedMarker\DoubleTaperedMarker.shader" />
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Basic\Plasma\Plasma.shader" />
      <None Include="Assets\Poly\Sources\Boxing_Glove_Placeholder_Andrea_Loriedo_aiP01_CrRYb\FileNameMapping.txt" />
+     <None Include="Assets\Poly\Sources\Flower_Poly_by_Google_eydI4_jXpi\FileNameMapping.txt" />
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Basic\Dots\Dots.shader" />
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Blocks\BlocksGem\BlocksGem.shader" />
      <None Include="Assets\PolyToolkit\Internal\tbt\Brushes\Basic\Electricity\Electricity.shader" />

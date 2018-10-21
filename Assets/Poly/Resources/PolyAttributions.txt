@@ -1,8 +1,38 @@
 This project uses the following items from Poly (http://poly.google.com):
 
+Title: big rock
+Author: Balazs Buri
+URL: https://poly.google.com/view/2GEkDDX5iaQ
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
 Title: Boxing Glove Placeholder
 Author: Andrea Loriedo
 URL: https://poly.google.com/view/aiP01-CrRYb
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: campfire wood
+Author: winnie Storey
+URL: https://poly.google.com/view/0drQQ1ENIfW
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Daisy
+Author: Poly by Google
+URL: https://poly.google.com/view/ckAqqaCskMy
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Flower
+Author: Poly by Google
+URL: https://poly.google.com/view/eydI4__jXpi
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Flower
+Author: Poly by Google
+URL: https://poly.google.com/view/9znAp0dJiS8
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
@@ -15,6 +45,12 @@ https://creativecommons.org/licenses/by/3.0/legalcode
 Title: Island
 Author: Poly by Google
 URL: https://poly.google.com/view/fG9iP5afr7U
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Tuft of grass
+Author: Poly by Google
+URL: https://poly.google.com/view/3tyh15Fbmsx
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
