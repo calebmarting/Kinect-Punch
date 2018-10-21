@@ -37,10 +37,10 @@ public class AnimDestroyOnComplete : MonoBehaviour {
 				if(fuseGracePeriod>0&&fuse==0){
 					GameObject clone = Instantiate(ExplosionPrefab);
 					if(handLeft.isPunching()){
-						clone.transform.position = handLeft.transform.position+Vector3.forward;
+						clone.transform.position = handLeft.transform.position+Vector3.forward*3;
 					}
 					if(handRight.isPunching()){
-						clone.transform.position = handRight.transform.position+Vector3.forward;
+						clone.transform.position = handRight.transform.position+Vector3.forward*3;
 					}
 					scoreManager.calculateScore(fuseGracePeriod);
 					Destroy(gameObject);

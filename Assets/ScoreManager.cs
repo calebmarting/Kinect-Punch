@@ -37,8 +37,8 @@ public class ScoreManager : MonoBehaviour {
 		//Debug.Log(totalScore);
 	}
 
-	public void miss(){
-		totalScore-=500;
+	public void miss(int pointDeduction = 500){
+		totalScore-=pointDeduction;
 
 		GameObject clone = Instantiate(ScoreTexts[3]);
 		clone.transform.position = transform.position;

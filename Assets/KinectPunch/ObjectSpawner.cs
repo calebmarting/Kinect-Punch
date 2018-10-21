@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class ObjectSpawner : MonoBehaviour {
 
+
+	public int missileProbOneIn = 10;
+	public GameObject missile;
+
 	public GameObject bomb;
 	public GameObject pot;
 	public GameObject fish;
 	public GameObject cannonTip;
+
+	public Transform[] missileLauncher;
 
 	public Song song;
 
@@ -36,7 +42,11 @@ public class ObjectSpawner : MonoBehaviour {
 		if (isGamePlaying) {
 			if (currentIndex < timings.GetLength(0)) {
 				if ((float)timings[currentIndex, 0] <= Time.timeSinceLevelLoad - offset-song.offset) {
-					
+					if(Random.Range(0,missileProbOneIn)==0){
+						GameObject proj = Instantiate(missile);
+						proj.transform.position = missileLauncher[Random.Range(0,missileLauncher.Length)].position;
+						proj.transform.LookAt(Camera.main.transform.position);
+					}
 					Spawn((char)timings[currentIndex, 1]);
 					currentIndex++;
 				}
