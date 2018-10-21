@@ -24,11 +24,11 @@ public class ObjectSpawner : MonoBehaviour {
 	private float offset;
 	private bool isGamePlaying;
 	private int currentIndex;
-	private object[,] timings;//new object[,] {{7.709289f,'b'},{8.681288f,'b'},{9.645397f,'b'},{10.56776f,'b'},{11.50429f,'b'},{11.93742f,'b'},{12.03765f,'b'},{12.15429f,'b'},{12.27157f,'b'},{12.38761f,'b'}};
+	//private object[,] timings;//new object[,] {{7.709289f,'b'},{8.681288f,'b'},{9.645397f,'b'},{10.56776f,'b'},{11.50429f,'b'},{11.93742f,'b'},{12.03765f,'b'},{12.15429f,'b'},{12.27157f,'b'},{12.38761f,'b'}};
 
 	// Use this for initialization
 	void Start () {
-		timings = song.timings;
+		//timings = song.timings;
 
 		isGamePlaying = false;
 		currentIndex = 0;
@@ -40,14 +40,14 @@ public class ObjectSpawner : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (isGamePlaying) {
-			if (currentIndex < timings.GetLength(0)) {
-				if ((float)timings[currentIndex, 0] <= Time.timeSinceLevelLoad - offset-song.offset) {
+			if (currentIndex < song.times.Length) {
+				if (song.times[currentIndex] <= Time.timeSinceLevelLoad - offset-song.offset) {
 					if(Random.Range(0,missileProbOneIn)==0){
 						GameObject proj = Instantiate(missile);
 						proj.transform.position = missileLauncher[Random.Range(0,missileLauncher.Length)].position;
 						proj.transform.LookAt(Camera.main.transform.position);
 					}
-					Spawn((char)timings[currentIndex, 1]);
+					Spawn(song.types[currentIndex]);
 					currentIndex++;
 				}
 			} else {
@@ -70,6 +70,7 @@ public class ObjectSpawner : MonoBehaviour {
 
 	public void StartGame () {
 		audioData = GetComponent<AudioSource>();
+		audioData.clip = song.song;
         audioData.Play(0);
 		currentIndex = 0;
 		offset = Time.timeSinceLevelLoad;
